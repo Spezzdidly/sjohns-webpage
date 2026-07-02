@@ -8,5 +8,5 @@ app.use("/js", express.static(path.join(__dirname, "js")));
 app.use("/css", express.static(path.join(__dirname, "css")));
 
 app.listen(8080, () => {
-	console.log("The server is running");
+	console.log("Server is listening on port 8080");
 });
