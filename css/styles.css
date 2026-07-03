@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(#6b9ac4, #363946);
+    background-color:#363946;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -13,29 +13,28 @@ h1 {
 
 #pageLinks {
     display: flex;
-    gap: 1.25rem;
+    gap: 2.0rem;
     width: fit-content;
-    background: linear-gradient(to right,#6b9ac4, #363946, #6b9ac4);
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
 }
 
 #pageLinks a {
-    display: inline-block;
-    font-size: 2.625rem;
-    font-weight: 600;
+    font-size: 2.6rem;
+    font-weight: 400;
     line-height: 1.2;
     color: #ff6663;
-    text-underline-offset: 0.2em;
+    text-underline-offset: 10px;
     transition: transform 150ms ease;
 }
 
 #pageLinks a:hover,
 #pageLinks a:focus-visible {
-    transform: translateY(-2px);
+    transform: translateY(-6px);
 }
 
 h2 {
+    margin-top: 50px;
     color: #fffcf7;
 }
 
