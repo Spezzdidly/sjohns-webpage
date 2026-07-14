@@ -1,49 +1,47 @@
 body {
-    background-color:#363946;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font-size: clamp(2rem, 5vw, 3rem);
-    color: #fffcf7;
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
 }
 
 #pageLinks {
     display: flex;
-    gap: 2.0rem;
-    width: fit-content;
-    padding: 0.75rem 1rem;
-    border-radius: 0.5rem;
+    gap: 2rem;
 }
 
-#pageLinks a {
-    font-size: 2.6rem;
-    font-weight: 400;
-    line-height: 1.2;
-    color: #ff6663;
-    text-underline-offset: 10px;
-    transition: transform 150ms ease;
+main {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    align-content: start;
+    row-gap: 2rem;
 }
 
-#pageLinks a:hover,
-#pageLinks a:focus-visible {
-    transform: translateY(-6px);
+#welcomeSection {
+    justify-self: start;
+    text-align: left;
+    padding: 4rem 2rem 0;
 }
 
-h2 {
-    margin-top: 50px;
-    color: #fffcf7;
+#welcomeSection h1 {
+    margin: 0;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 0.95;
+    font-weight: 800;
 }
 
-p {
-    color: #fffcf7;
+#welcomeSection h1 span {
+    display: block;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    #pageLinks a {
-        transition: none;
-    }
+#homeSection {
+    padding: 0 2rem 2rem;
 }
