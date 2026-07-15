@@ -1,0 +1,63 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    color: #fffcf7;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background-color: #23252e;
+}
+
+#topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+}
+
+#pageLinks {
+    display: flex;
+    gap: 2rem;
+}
+
+#topBar a {
+    padding: 0.5rem 1rem;
+    border: 2px solid #6b9ac4;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #fffcf7;
+}
+
+#topBar a:hover {
+    background-color: #6b9ac4;
+    color: #23252e;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    align-content: start;
+    row-gap: 2rem;
+}
+
+#welcomeSection {
+    justify-self: start;
+    text-align: left;
+    padding: 4rem 2rem 0;
+}
+
+#welcomeSection h1 {
+    margin: 0;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 0.95;
+    font-weight: 800;
+}
+
+#welcomeSection h1 span {
+    display: block;
+}
+
+#homeSection {
+    padding: 0 2rem 2rem;
+}
