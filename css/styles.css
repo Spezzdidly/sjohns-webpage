@@ -29,6 +29,11 @@ body {
     color: #fffcf7;
 }
 
+#topBar a:hover {
+    background-color: #6b9ac4;
+    color: #23252e;
+}
+
 main {
     display: grid;
     grid-template-rows: 0.5fr 1fr;
