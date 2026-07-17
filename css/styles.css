@@ -61,3 +61,81 @@ main {
 #homeSection {
     padding: 0 2rem 2rem;
 }
+
+.projectsPage {
+    grid-template-rows: auto 1fr;
+    padding-bottom: 4rem;
+}
+
+#projectSection {
+    text-align: center;
+    padding: 4rem 2rem 1rem;
+}
+
+#projectSection h1 {
+    margin: 0;
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    line-height: 1;
+}
+
+.projectList {
+    width: min(1100px, calc(100% - 4rem));
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.projectCard {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.1fr);
+    gap: 2rem;
+    align-items: center;
+    padding: 1.25rem;
+    border: 2px solid #6b9ac4;
+    border-radius: 0.5rem;
+    background-color: #2f323d;
+}
+
+.projectImage {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    display: block;
+    object-fit: cover;
+    border-radius: 0.35rem;
+}
+
+.projectContent h2 {
+    margin: 0 0 0.75rem;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.projectContent p {
+    margin: 0;
+    color: #d7d2c8;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    #topBar,
+    #pageLinks {
+        gap: 0.75rem;
+    }
+
+    #topBar {
+        padding: 1rem;
+    }
+
+    #topBar a {
+        padding: 0.45rem 0.7rem;
+    }
+
+    .projectList {
+        width: min(100% - 2rem, 1100px);
+    }
+
+    .projectCard {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
